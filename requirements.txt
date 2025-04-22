@@ -1,0 +1,5 @@
+tqdm
+datasets
+pandas
+ipywidgets
+git+https://github.com/philipf/morse-code.git@main
