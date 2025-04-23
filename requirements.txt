@@ -3,3 +3,9 @@ datasets
 pandas
 ipywidgets
 git+https://github.com/philipf/morse-code.git@main
+
+
+transformers
+
+#torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu127
+unsloth
