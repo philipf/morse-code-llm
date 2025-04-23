@@ -5,7 +5,7 @@ ipywidgets
 git+https://github.com/philipf/morse-code.git@main
 
 
-transformers
-
-#torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu127
-unsloth
+unsloth[cu124-torch260]@git+https://github.com/unslothai/unsloth.git
+#transformers
+ -e git+https://github.com/huggingface/transformers@v4.49.0-Gemma-3#egg=transformers&subdirectory=.&no-deps
+tensorboard
