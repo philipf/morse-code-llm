@@ -6,6 +6,4 @@ ipykernel
 git+https://github.com/philipf/morse-code.git@main
 #unsloth[cu124-torch260]@git+https://github.com/unslothai/unsloth.git
 unsloth
-#vllm
-git+https://github.com/huggingface/transformers@v4.49.0-Gemma-3
 tensorboard
