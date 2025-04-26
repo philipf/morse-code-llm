@@ -75,8 +75,18 @@ To use the virtual environment in a Jupyter Notebook within VS Code:
 
 
 ## Notebooks
-### Test setup - 00-test-env.ipynb
-Run the `00-test-env.ipynb` notebook to verify that the custom Morse code library is installed and to confirm that the Jupyter Notebook widgets are functioning as expected.
+
+> [!info]
+> Run the notebooks sequentially from `00-test-env.ipynb` to `02-fine-tune-bi.ipynb` for this guide.
+
+### [00-test-env.ipynb](00-test-env.ipynb)
+To verify that the custom Morse code library is installed and to confirm that the Jupyter Notebook widgets are functioning as expected.
+
+### [01-build-dataset.ipynb](01-build-dataset.ipynb)
+To create the training dataset by preparing English phrases and their Morse Code translations. This notebook includes data normalisation, encoding, deduplication, and uploading the dataset to Hugging Face.
+
+### [02-fine-tune-bi.ipynb](02-fine-tune-bi.ipynb)
+To fine-tune the Gemma 3 model for bidirectional translation between English and Morse Code. This notebook uses the dataset prepared in `01-build-dataset.ipynb` and trains the model for both directions of translation.
 
 
 ## Model Evaluation with TensorBoard
@@ -102,3 +112,12 @@ To evaluate the model using TensorBoard, follow these steps:
 - **Training Loss**: This metric indicates how well the model is learning during training. A decreasing training loss generally signifies that the model is improving. However, if the loss plateaus or increases, it may indicate overfitting or learning issues.
 
 - **Gradient Norm (grad_norm)**: This measures the magnitude of gradients during backpropagation. Large gradient norms can lead to instability, while very small norms may indicate vanishing gradients. Monitor this value to ensure stable and effective training.
+
+
+## LM Studio Support
+
+After creating a [GGUF](https://huggingface.co/philipfourie/bi-morse-code-Q8_0-GGUF) file and hosting it on Hugging Face, you can download and use it in [LM Studio](https://lmstudio.ai/). LM Studio is a user-friendly interface for interacting with language models, allowing you to test and deploy your fine-tuned model efficiently. Simply follow the instructions in LM Studio to load the GGUF file and start using your model.
+
+## Ollama Support
+
+It is possible to build a [GGUF](https://huggingface.co/philipfourie/bi-morse-code-Q8_0-GGUF) file and host it in [Ollama](https://ollama.com/). Ollama provides a platform for [deploying](https://ollama.com/philipfourie/bi-morse-code) and managing language models with ease. For detailed instructions on how to set this up, refer to the [ollama/README.md](ollama/README.md) file included in this repository.
