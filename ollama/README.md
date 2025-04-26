@@ -2,7 +2,7 @@
 
 ## How to Create and Build
 
-First, create a `Modelfile`. See the [Modelfile](ModelFile) in this directory as an example. Note that the [template](https://github.com/ollama/ollama/blob/main/docs/template.md) included in this file is for Gemma 3. Additionally, it only retains the last message in the conversation.
+First, create a `Modelfile`. See the [Modelfile](Modelfile) in this directory as an example. Note that the [template](https://github.com/ollama/ollama/blob/main/docs/template.md) included in this file is for Gemma 3. Additionally, it only retains the last message in the conversation.
 
 The structure for the `Modelfile` is described in detail [here](https://github.com/ollama/ollama/blob/main/docs/modelfile.md).
 
