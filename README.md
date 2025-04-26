@@ -76,7 +76,7 @@ To use the virtual environment in a Jupyter Notebook within VS Code:
 
 ## Notebooks
 
-> [!info]
+> [!TIP]
 > Run the notebooks sequentially from `00-test-env.ipynb` to `02-fine-tune-bi.ipynb` for this guide.
 
 ### [00-test-env.ipynb](00-test-env.ipynb)
