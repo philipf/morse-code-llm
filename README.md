@@ -39,7 +39,7 @@ Paste your token when prompted.
 
 ### Environment Compatibility
 
-The notebooks in this project are best run on a Windows or WSL2 environment. Running them natively on Windows can present challenges. Using WSL2 with Debian as the distribution has been tested and is known to work effectively.
+The notebooks in this project are best run on Linux or WSL2 environment. Running them natively on Windows can present challenges. I used WSL2 with Debian.
 
 
 ### Setting up a Python Virtual Environment
@@ -76,7 +76,7 @@ To use the virtual environment in a Jupyter Notebook within VS Code:
 
 ## Notebooks
 ### Test setup - 00-test-env.ipynb
-Run the 00-test-env.ipynb notebook to verify that the custom Morse code library is installed and to confirm that the Jupyter Notebook widgets are functioning as expected.
+Run the `00-test-env.ipynb` notebook to verify that the custom Morse code library is installed and to confirm that the Jupyter Notebook widgets are functioning as expected.
 
 
 ## Model Evaluation with TensorBoard
